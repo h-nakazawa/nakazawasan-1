@@ -1,4 +1,4 @@
-.parent {
+.list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -6,11 +6,34 @@
   margin: 0 auto;
 }
 
-.child {
-  padding: 10px;
+.item {
+  display: flex;
+  margin: 30px 0;
 }
 
-.child img {
-  width: 300px;
-  height: 300px;
+.item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.item div {
+  margin: 20px 20px 0 0;
+}
+
+.item:nth-child(even) div {
+  margin: 20px 0 0 20px;
+}
+
+.item h1 {
+  font-size: 30px;
+  padding: 0 0 20px 0;
+}
+
+.item p {
+  max-width: 300px;
+  width: 100%;
+}
+
+.item img {
+  max-width: 300px;
+  width: 100%;
 }
